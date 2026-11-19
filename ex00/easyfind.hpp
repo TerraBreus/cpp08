@@ -8,10 +8,11 @@ class easyfind_exception : public std::exception
 		T				data;
 	public :
 		explicit easyfind_exception(std::string m, T d) : message(m), data(d) {};
+		virtual ~easyfind_exception() throw() {}
 
-		const char* what() const noexcept override {
+		const char* what() const throw() {
 			return (message.c_str());}
-		T what_data() const noexcept {
+		T what_data() const throw() {
 			return (data);}
 };
 
