@@ -12,7 +12,11 @@
 int main(void)
 {
 	{
-		std::vector<int> victor = {12, 2, 3};
+		std::vector<int> victor;
+
+		victor.push_back(12);
+		victor.push_back(59);
+		victor.push_back(99);
 
 		try
 		{
