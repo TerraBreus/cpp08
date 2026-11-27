@@ -9,7 +9,7 @@ private:
     unsigned int     _maxSize;
 
 public:
-    Span(unsigned int n);
+    Span(unsigned int n = 0);
     Span(const Span& other);
     Span& operator=(const Span& other);
     ~Span();
